@@ -82,7 +82,7 @@ def format_payment(payment: Dict[str, Any]) -> Dict[str, Any]:
 
 
 @mcp.tool(description="Execute a custom method on an Odoo model")
-def execute_method(
+async def execute_method(
     ctx: Context,
     model: str,
     method: str,
